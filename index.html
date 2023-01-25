@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Тестовое задание ТКБ Банк</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Тестовое задание ТКБ Банк">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <p>Хедер</p>
+        </header>
+        <main>
+            <div class="menu">
+              <span class="menu__title">Меню</span>
+              <ul class="menu__list">
+                <li class="menu__item"><a href="#" class="menu__link">&ndash;&nbsp;Пункт 1</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">&ndash;&nbsp;Пункт 2</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">&ndash;&nbsp;Пункт 3</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">&ndash;&nbsp;Пункт 4</a></li>
+              </ul>
+            </div>
+            <div class="search">
+              <form class="form search__form" action="url.php">
+                <input class="search__form-input" id="search" type="search" placeholder="Поиск" name="search" required autocomplete="off">
+                <label class="search__form-label" for="name"></label>
+              </form>
+            </div>
+            <div class="table">
+              <h1 class="visually-hidden section-title">Тестовое задание - Заполнение таблицы профессий</h1>
+              <form class="main-form form" id="form" action="server.php" method="post" enctype="multipart/form-data">
+                <div class="main-form__field-wrapper">
+                  <div class="main-form__field-heading">
+                    <div class="main-form__field-name">
+                      ФИО
+                    </div>
+                    <div class="main-form__field-name">
+                      Должность
+                    </div>
+                    <div class="main-form__field-name">
+                      Возраст
+                    </div>
+                    <div class="main-form__field-name">
+                      Компетенции
+                    </div>
+                    <div></div>
+                  </div>
+                  <div class="main-form__field-row">
+                    <div class="main-form__field">
+                      <input class="main-form__input" id="name" type="text" placeholder="" name="name" required autocomplete="off">
+                      <label class="main-form__label" for="name"></label>
+                    </div>
+                    <div class="main-form__field">
+                      <select class="main-form__input" id="position" name="position">
+                        <option value="Аналитик">Аналитик</option>
+                        <option value="Менеджер">Менеджер</option>
+                        <option value="Программист">Программист</option>
+                        <option value="Юрист">Юрист</option>
+                      </select>
+                    </div>
+                    <div class="main-form__field">
+                      <input class="main-form__input" id="age" type="text" onkeypress="validate(event)" placeholder="" name="age" required autocomplete="off">
+                      <label class="main-form__label" for="age"></label>
+                    </div>
+                    <div class="main-form__field">
+                        <textarea class="main-form__textarea" id="skills" placeholder="" name="skills" required autocomplete="off"></textarea>
+                        <label class="main-form__label" for="skills"></label>
+                    </div> 
+                    <button type="button" class="button button--delete">-</button>
+                  </div>     
+                </div>
+                <div class="main-form__field-buttons">
+                  <button type="submit" class="button button--submit">Отправить</button>
+                  <div></div>
+                  <div></div>  
+                  <button type="button" class="button button--add">Добавить</button>
+                </div>
+              </form>
+            </div>
+            <div class="info">
+              <p>Информация</p>
+            </div>
+        </main>
+        <footer class="footer">
+          <p>Футер</p>
+        </footer>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

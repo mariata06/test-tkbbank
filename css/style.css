@@ -1,0 +1,208 @@
+header,
+footer {
+  text-align: center;
+}
+
+header p,
+footer p {
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 700;
+  margin: 20px auto;
+}
+
+footer {
+  margin-top: auto;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',  sans-serif;
+  min-width: 1140px;
+  background-color: #dbe6e9;
+  background-image: linear-gradient(to right bottom, rgb(199, 199, 228), rgb(113, 136, 185));
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
+main {
+  display: grid;
+  grid-template-rows: 100px 7fr 100px;
+  grid-template-columns: 180px 1020px;
+  grid-template-areas: 
+            "menu search"
+            "menu table"
+            "menu info";
+  background-color: #ffffff;          
+}
+
+.info {
+  font-weight: 600;
+  grid-area: info;
+  height: 60px;
+  padding: 20px 0;
+  background-color: rgb(178, 222, 240);
+}
+
+.info p {
+  text-align: center;
+}
+
+.search {
+  grid-area: search;
+  padding: 20px 0;
+  height: 60px;
+  background-color: wheat;
+}
+
+.search__form-input {
+  padding: 0 20px;
+  margin-left: 300px;
+}
+
+.menu {
+  font-weight: 600;
+  grid-area: menu;
+  padding: 150px 20px;
+  background-color: rgb(243, 208, 213);
+}
+
+.menu__list {
+  list-style: none;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.menu__link {
+  color: #000000;
+}
+
+.table {
+  grid-area: table;
+  margin-bottom: 50px;
+}
+
+.main-form {
+  padding: 50px;
+}
+
+.main-form__field-heading,
+.main-form__field-row,
+.main-form__field-buttons {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 300px 70px;
+}
+
+.main-form__field-buttons {
+  margin: 100px 0 50px;
+}
+
+.main-form__field {
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  padding: 20px 10px;
+}
+
+.main-form__input {
+  width: 160px;
+  padding: 0 10px;
+}
+
+.main-form__input textarea {
+  width: 300px;
+}
+
+.main-form__field-name {
+  border: 1px solid #000000;
+  background-color: rgb(220, 241, 221); 
+  font-weight: 600;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+textarea {
+  height: 100px;
+  width: 100%;
+  max-width: 350px;
+}
+
+input,
+textarea,
+button,
+select {
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+input, 
+select,
+button {
+  height: 30px;
+}
+
+input, 
+textarea,
+select,
+button {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: darkgrey; 
+}
+
+.button {
+  width: 150px;
+  outline: none;
+  background-color: white;
+}  
+
+.button:hover {
+  border-color: darkgrey;
+  background-color: rgb(238, 231, 231); 
+}
+
+.button--delete {
+  margin: auto;
+  width: 50px;
+  height: 20px;
+}
+
+.button--add, 
+.button--submit {
+  margin: 0 auto;
+}
+
+.button--submit,
+.button--add {
+  width: 150px;
+}
